@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html>
 
@@ -70,10 +69,11 @@
                                 <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                                <a class="nav-link" href="{% url 'login_page' %}"> <i class="fa fa-user"
+                                        aria-hidden="true"></i> Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> <i class="fa fa-user"
+                                <a class="nav-link" href="{% url 'register' %}"> <i class="fa fa-user"
                                         aria-hidden="true"></i> SignUP</a>
                             </li>
                             <form class="form-inline">
@@ -116,6 +116,7 @@
                                 </a>
                             </div>
                         </div>
+
                         <div class="info_social">
                             <a href="">
                                 <i class="fa fa-facebook" aria-hidden="true"></i>
