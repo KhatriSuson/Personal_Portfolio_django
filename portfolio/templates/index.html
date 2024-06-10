@@ -1,69 +1,182 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+    <!-- end header section -->
+    <!-- slider section -->
+     
+    
+    <section class="slider_section">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+           
+            <div class="container ">
+              {% for banner in banners %}
+              <div class="row">
+                <div class="col-md-6 ">
 
-{% block banner %}
-{% include 'home/banner.html' %}
-{% endblock banner %}
-<!-- end slider section -->
-</div>
-<!-- service section -->
-{% block services %}
-{% include 'home/services.html' %}
+                  <div class="detail-box">
+                    <h1>
+                      {{ banner.title }}
+                    </h1>
+                    <p>
+                      {{ banner.description }}
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                  
+                </div>
 
-{% endblock services %}
-<!-- end service section -->
-<!-- about section -->
-<section class="about_section layout_padding">
-    <div class="container  ">
-        <div class="heading_container heading_center">
-            <h2>
-                About <span>Us</span>
-            </h2>
-            <p>
-                Magni quod blanditiis non minus sed aut voluptatum illum quisquam aspernatur ullam vel beatae rerum
-                ipsum voluptatibus
-            </p>
-        </div>
-        <div class="row">
-            <div class="col-md-6 ">
-                <div class="img-box">
-                    <img src="images/about-img.png" alt="">
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{{ banner.image.url }}" alt="">
+                  </div>
                 </div>
+              </div>
+              {% endfor %}
             </div>
-            <div class="col-md-6">
-                <div class="detail-box">
-                    <h3>We Are Finexo</h3>
+            
+          </div>
+          
+          <!-- <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Crypto <br>
+                      Currency
+                    </h1>
                     <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration
-                        in some form, by injected humour, or randomised words which don't look even slightly believable.
-                        If you
-                        are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
-                        hidden in
-                        the middle of text. All
+                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
                     </p>
-                    <p>
-                        Molestiae odio earum non qui cumque provident voluptates, repellendus exercitationem, possimus
-                        at iste corrupti officiis unde alias eius ducimus reiciendis soluta eveniet. Nobis ullam ab
-                        omnis quasi expedita.
-                    </p>
-                    <a href="">Read More</a>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/slider-img.png" alt="">
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      Crypto <br>
+                      
+                    </h1>
+                    <p>
+                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
         </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- service section -->
+
+  {% include 'home/services.html' %}
+
+  <!-- end service section -->
+
+
+  <!-- about section -->
+
+  {% include 'home/abouts.html' %}
+
+  <!-- end about section -->
+
+  <!-- why section -->
+
+{% include 'home/whys.html' %}
+
+  <!-- end why section -->
+
+  <!-- team section -->
+{% include 'home/teams.html' %}
+  <!-- end team section -->
+
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+          What says our <span>Customers</span>
+        </h2>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            {% for feedback in feedbacks %}
+            <div class="box">
+              <div class="img-box">
+                <img src="{{ feedback.image.url }}" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      {{ feedback.name}}
+                    </h6>
+                    <p>
+                      {{ feedback.title }}
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                 {{ feedback.feedback }}
+                 </div>
+            </div>
+            {% endfor %}
+          </div>
+         
+        </div>
+      </div>
     </div>
-</section>
-<!-- end about section -->
-<!-- why section -->
-{% block feature %}
-{% include 'home/features.html' %}
-{% endblock feature %}
-<!-- end why section -->
+  </section>
+
+  <!-- end client section -->
 
 
+  <!-- info section -->
 
-<!-- footer section -->
-
-
-{% endblock content %}
+{% endblock %}

@@ -24,6 +24,9 @@ def home(request):
     views["banners"] = Banner.objects.all()
     views["features"] = Feature.objects.all()
     views["medias"] = SocialMedia.objects.all()
+    views["abouts"] = About.objects.all()
+    views["teams"] = Team.objects.all()
+    views["feedbacks"] = Feedback.objects.all()
 
     return render(request, "index.html", views)
 
@@ -50,12 +53,19 @@ class FeatureView(ListView):
     model = Feature
     template_name = "feature.html"
     context_object_name = "features"
+    
+class TeamView(ListView):
+    model = Team
+    template_name = "team.html"
+    context_object_name = "teams"
 
 
-# class ContactView(ListView):
-#     model = Contact
-#     template_name = 'contact.html'
-#     context_object_name = "contacts"
+# class TeamView(ListView):
+#     # model = Contact
+#     template_name = 'team.html'
+#     context_object_name = "teams"
+
+
 
 
 def contact_form(request):
@@ -91,6 +101,7 @@ def login_page(request):
 
         # Authenticate the user with the provided username and password
         user = authenticate(username=username, password=password)
+        return redirect("/")
 
         if user is None:
             # Display an error message if authentication fails (invalid password)
@@ -133,8 +144,8 @@ def register_page(request):
 
         # Display an information message indicating successful account creation
         messages.info(request, "Account created Successfully!")
-        return redirect("/register/")
-
+        return redirect("login_page")
+ 
     # Render the registration page template (GET
 
     return render(request, "user/register.html")
