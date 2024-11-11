@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+    <div style="background-color: aliceblue;">
+        <label for="username">Username</label>
+        <input type="text" name="username"  placeholder="Enter your username">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter your password">
+        <br>
+        <button type="submit">Submit</button>
+    
+    </div>
+
+
+    <!-- CONTACT FORM -->
+    <!-- ===================  -->
+     
+    <!-- <div class="col-lg-8" style="background-color: aliceblue;">
+        <div class="row">
+            <div class="col-lg-6 form-group">
+                <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control"
+                    required="" type="text">
+                <br>
+
+                <input name="email" placeholder="Enter email address"
+                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control"
+                    required="" type="email">
+
+                <br>
+                <input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control"
+                    required="" type="text">
+
+            </div>
+            <div class="col-lg-6 form-group">
+
+                <textarea class="common-textarea form-control" name="message" placeholder="Enter Messege"
+                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'"
+                    required=""></textarea>
+
+            </div>
+            <div class="col-lg-12">
+                <div class="alert-msg" style="text-align: left;"></div>
+                <button type="submit" class="genric-btn primary" style="float: right;">Send Message</button>
+            </div>
+            <div class="container">
+                <br><br>
+            </div>
+        </div>
+        </form>
+    </div> -->
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>hello i am testing page</h1>
+<button><a href="{% url 'home' %}"><b>Back To home</b></a></button>
+
+
+{% endblock %}

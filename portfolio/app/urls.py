@@ -9,4 +9,13 @@ urlpatterns = [
     path("service/", ServiceView.as_view(), name="service"),
     path("feature/", FeatureView.as_view(), name="feature"),
     path("contact/", ContactView.as_view(), name="contact"),
+    path("login/", login, name="login"),
+    path("signup/", singup, name="singup"),
+
+
+
+
+
+
+    # path('login/', LoginView.as_view(), name="login"),
 ]
