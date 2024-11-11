@@ -81,20 +81,3 @@ def singup(request):
 
 
 
-
-
-
-
-
-
-# def login(request):
-    # return render(request, "account/login.html")
-
-# class LoginView(View):
-#     template_name = 'testlogin.html'
-#     context_objects_name = 'logins'
-# def login(request):
-#     return render(request, "testlogin.html")
-
-
-
