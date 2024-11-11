@@ -35,20 +35,23 @@
         {% block header %}
         <header class="header_section">
             <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <nav class="navbar navbar-expand-lg custom_nav-container">
+                    <!-- Branding -->
                     <a class="navbar-brand" href="{% url 'home' %}">
                         <span>Portfolio</span>
                     </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class=""></span>
+                    
+                    <!-- Toggle button for mobile view -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
+                    
+                    <!-- Navbar content -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav  ">
+                        <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="{% url 'home' %}">Home <span
-                                        class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'about' %}">About</a>
@@ -62,17 +65,21 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                             </li>
+                            <!-- Login & Signup -->
                             <li class="nav-item">
-                                <a class="nav-link" href="{% url 'login' %}"> <i class="fas fa-sign-in-alt"></i> Login</a>
+                                <a class="nav-link" href="{% url 'login' %}"><i class="fas fa-sign-in-alt"></i> Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> <i class="fas fa-sign-out-alt"></i> SignUP</a>
+                                <a class="nav-link" href="#"><i class="fas fa-user-plus"></i> Sign Up</a>
                             </li>
-                            <form class="form-inline">
-                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </button>
-                            </form>
+                            <!-- Search form -->
+                            <li class="nav-item">
+                                <form class="form-inline">
+                                    <button class="btn nav_search-btn" type="submit">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                </form>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -174,7 +181,28 @@
         <!-- Google Map -->
         <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+        </script>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Sticky navbar
+                window.addEventListener('scroll', function() {
+                    var header = document.querySelector('.header_section');
+                    header.classList.toggle('sticky', window.scrollY > 50);
+                });
+            
+                // Smooth scrolling for links
+                const navLinks = document.querySelectorAll('.nav-link');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+            });
             </script>
+
         <!-- End Google Map -->
     </div>
 </body>
