@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Full Stack Developer & AI Expert</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+            position: relative;
+            color: white;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        /* Animations */
+        .animate-fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .animate-slide-up {
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 animate-fade-in">Full Stack Developer | AI & ML Enthusiast</h1>
+            <p class="lead animate-slide-up">Crafting elegant, efficient digital solutions</p>
+            <a href="about.html" class="btn btn-light mt-3 animate-fade-in">Learn More About Me</a>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center">Skills & Expertise</h2>
+            <p class="text-center mb-5">Bringing together Full Stack Development, AI/ML, and Cloud Computing</p>
+            <div class="row text-center">
+                <div class="col-md-4 animate-slide-up">
+                    <i class="fas fa-code display-3 text-primary"></i>
+                    <h4>Full Stack Development</h4>
+                    <p>Proficient in React, Node.js, Django, and Bootstrap.</p>
+                </div>
+                <div class="col-md-4 animate-slide-up">
+                    <i class="fas fa-cloud text-primary display-3"></i>
+                    <h4>AWS Certified Practitioner</h4>
+                    <p>Delivering scalable and secure cloud solutions.</p>
+                </div>
+                <div class="col-md-4 animate-slide-up">
+                    <i class="fas fa-robot display-3 text-primary"></i>
+                    <h4>Machine Learning</h4>
+                    <p>Building predictive models and AI-driven systems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">My Projects</h2>
+            <div class="row g-4">
+                <!-- Project Card 1 -->
+                <div class="col-md-4">
+                    <div class="card project-card animate-fade-in">
+                        <img src="assets/img/ecom.png" class="card-img-top" alt="E-Commerce Platform">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Commerce Platform</h5>
+                            <p class="card-text">Built using React, Node.js, and MongoDB to deliver a seamless online
+                                shopping experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="col-md-4">
+                    <div class="card project-card animate-fade-in">
+                        <img src="images/project2.jpg" class="card-img-top" alt="AI Chatbot">
+                        <div class="card-body">
+                            <h5 class="card-title">AI Chatbot</h5>
+                            <p class="card-text">Powered by Python and TensorFlow, designed to handle complex customer
+                                interactions.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="col-md-4">
+                    <div class="card project-card animate-fade-in">
+                        <img src="images/project3.jpg" class="card-img-top" alt="Portfolio Website">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">Showcasing personal projects and skills, designed with Bootstrap and
+                                custom CSS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Suson Khatri. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Smooth Scroll for navigation links
+        document.querySelectorAll('a.nav-link').forEach(link => {
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                const targetId = event.target.getAttribute('href').substring(1);
+                document.getElementById(targetId).scrollIntoView({
+                    behavior: 'smooth',
+                });
+            });
+        });
+
+    </script>
+</body>
+
+</html>
