@@ -4,12 +4,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #007bff;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-item i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .service-item h3 {
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+        }
+
+        .service-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+
+            .services-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1>Services</h1>
     </header>
+
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -18,19 +181,48 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Main Content -->
     <div class="container">
         <h2>What I Offer</h2>
-        <ul>
-            <li>Full Stack Web Development</li>
-            <li>Cloud Infrastructure Solutions (AWS)</li>
-            <li>Machine Learning Model Development</li>
-            <li>Artificial Intelligence Solutions</li>
-            <li>Custom Software Development</li>
-            <li>Responsive Web Application Design</li>
-        </ul>
+        <div class="services-list">
+            <div class="service-item">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Full Stack Web Development</h3>
+                <p>I build dynamic, scalable, and responsive web applications using modern technologies like Django, React, and Node.js.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Infrastructure Solutions (AWS)</h3>
+                <p>Providing robust cloud solutions with AWS, including deployment, monitoring, and scaling of your web applications.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-robot"></i>
+                <h3>Machine Learning Model Development</h3>
+                <p>Creating custom machine learning models tailored to solve real-world problems and improve data-driven decision making.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-brain"></i>
+                <h3>Artificial Intelligence Solutions</h3>
+                <p>Implementing AI-powered systems for automation, optimization, and data analysis to drive efficiency and innovation.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-cogs"></i>
+                <h3>Custom Software Development</h3>
+                <p>Delivering bespoke software solutions to meet your unique business needs and optimize workflows.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Web Application Design</h3>
+                <p>Designing responsive, mobile-first web applications that ensure a seamless experience across all devices.</p>
+            </div>
+        </div>
     </div>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Suson Khatri. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
