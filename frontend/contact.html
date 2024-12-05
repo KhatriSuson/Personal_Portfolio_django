@@ -4,12 +4,141 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background: #007bff;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background: #333;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .container a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .container a:hover {
+            color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .container {
+                padding: 0 10px;
+            }
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1>Contact Me</h1>
     </header>
+
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -18,14 +147,20 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Main Content -->
     <div class="container">
         <h2>Let’s Connect!</h2>
-        <p>Email: suson.khatri@example.com</p>
-        <p>LinkedIn: <a href="#">linkedin.com/in/suson-khatri</a></p>
-        <p>GitHub: <a href="https://github.com/KhatriSuson">github.com/KhatriSuson</a></p>
+        <p>If you'd like to work together, have any questions, or just want to chat, feel free to reach out!</p>
+        <p><strong>Email:</strong> <a href="mailto:suson.khatri@example.com">suson.khatri@example.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/suson-khatri" target="_blank">linkedin.com/in/suson-khatri</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/KhatriSuson" target="_blank">github.com/KhatriSuson</a></p>
     </div>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Suson Khatri. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
