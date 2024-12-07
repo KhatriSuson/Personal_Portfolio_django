@@ -5,204 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushan Khatri - Full Stack Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/portfolio-style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <style>
-        /* Root Variables for Themes */
-        :root {
-            --primary-color: #6a11cb;
-            --secondary-color: #2575fc;
-            --background-color: #ffffff;
-            --text-color: #333333;
-        }
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        [data-theme="dark"] {
-            --primary-color: #ff758c;
-            --secondary-color: #ff7eb3;
-            --background-color: #1e1e1e;
-            --text-color: #ffffff;
-        }
-
-        /* Global Styles */
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        h1, h2, h3 {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--primary-color);
-            transition: color 0.3s;
-        }
-
-        a:hover {
-            color: var(--secondary-color);
-        }
-
-        img {
-            max-width: 100%;
-            display: block;
-        }
-
-        /* Header */
-        header {
-            position: sticky;
-            top: 0;
-            background-color: var(--background-color);
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s, box-shadow 0.3s;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        .logo a {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-        }
-
-        nav ul li a {
-            font-size: 1rem;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: var(--secondary-color);
-        }
-
-        .theme-toggle {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text-color);
-        }
-
-        /* Mobile Navbar */
-        .hamburger {
-            display: none;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: var(--text-color);
-        }
-
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                background-color: var(--background-color);
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-                width: 200px;
-                padding: 10px;
-            }
-
-            nav ul.active {
-                display: flex;
-            }
-
-            .hamburger {
-                display: block;
-            }
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: #ffffff;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .cta-button {
-            padding: 10px 20px;
-            font-size: 1rem;
-            font-weight: bold;
-            color: var(--primary-color);
-            background-color: #ffffff;
-            border-radius: 25px;
-            text-decoration: none;
-            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
-            transition: all 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #f8f8f8;
-            transform: scale(1.1);
-        }
-
-        /* Section Styles */
-        section {
-            padding: 60px 20px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .section-title {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            position: relative;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: var(--primary-color);
-            margin: 10px auto;
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
 </head>
 
 <body>
@@ -210,7 +21,7 @@
     <header>
         <div class="nav-container">
             <div class="logo">
-                <a href="#">Sushan Khatri</a>
+                <a href="#home">Sushan Khatri</a>
             </div>
             <button class="theme-toggle" aria-label="Toggle theme">
                 🌗
@@ -218,11 +29,11 @@
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#resume">Resume</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -239,8 +50,10 @@
         </div>
     </section>
 
-    <!-- Content Sections -->
+
+
     <section id="about" class="about">
+
         <div class="container">
             <h2>About Me</h2>
             <div class="profile">
@@ -257,19 +70,152 @@
         </div>
     </section>
 
-    <section id="portfolio">
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            <p>Showcase of my projects goes here.</p>
+            <h2>Portfolio</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <img src="./assets/img/cloud-solution.jpeg" alt="Project 1">
+                    <h3>Web Development Project</h3>
+                    <p>Developed a responsive e-commerce website using React and Node.js.</p>
+                </div>
+                <div class="project-card">
+                    <img src="./assets/img/ecom.png" alt="Project 2">
+                    <h3>Cloud Solution</h3>
+                    <p>Deployed a serverless application on AWS using Lambda and API Gateway.</p>
+                </div>
+                <div class="project-card">
+                    <img src="project3.jpg" alt="Project 3">
+                    <h3>AI/ML Model</h3>
+                    <p>Created a machine learning model for sentiment analysis using Python and TensorFlow.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <p>Feel free to reach out to me!</p>
+            <h2 class="section-title">Certifications</h2>
+            <ul class="certifications-list">
+                <li class="certification-item">
+                    <div class="certification-card">
+                        <span class="certification-icon">☁️</span>
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                    </div>
+                </li>
+                <li class="certification-item">
+                    <div class="certification-card">
+                        <span class="certification-icon">🌐</span>
+                        <h3>Google Cloud Certified - Associate Cloud Engineer</h3>
+                    </div>
+                </li>
+                <li class="certification-item">
+                    <div class="certification-card">
+                        <span class="certification-icon">🤖</span>
+                        <h3>TensorFlow Developer Certificate</h3>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
+
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <p class="resume-description">
+                    Explore my professional journey, skills, and experiences. Click below to download a copy of my
+                    resume.
+                </p>
+                <a href="resume.pdf" class="cta-button" download>
+                    <span class="button-icon">📄</span> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="services" id="services">
+        <div class="container">
+            <h2>What I Offer</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Full Stack Web Development</h3>
+                    <p>I build dynamic, scalable, and responsive web applications using modern technologies like Django,
+                        React, and Node.js.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-cloud"></i>
+                    <h3>Cloud Infrastructure Solutions (AWS)</h3>
+                    <p>Providing robust cloud solutions with AWS, including deployment, monitoring, and scaling of your
+                        web applications.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-robot"></i>
+                    <h3>Machine Learning Model Development</h3>
+                    <p>Creating custom machine learning models tailored to solve real-world problems and improve
+                        data-driven decision making.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>Artificial Intelligence Solutions</h3>
+                    <p>Implementing AI-powered systems for automation, optimization, and data analysis to drive
+                        efficiency and innovation.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Custom Software Development</h3>
+                    <p>Delivering bespoke software solutions to meet your unique business needs and optimize workflows.
+                    </p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Web Application Design</h3>
+                    <p>Designing responsive, mobile-first web applications that ensure a seamless experience across all
+                        devices.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="contact-description">
+                Have any questions or want to work together? Fill out the form below, and I'll get back to you as soon
+                as possible.
+            </p>
+            <form action="submit-form.php" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here..." rows="5"
+                        required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -292,27 +238,14 @@
                 <p>&copy; 2024 KhatriSuson. All Rights Reserved.</p>
                 <div class="social-icons">
                     <a href="https://x.com/SushanKhatri4" target="_blank" aria-label="Twitter">🐦</a>
-                    <a href="https://www.linkedin.com/in/sushan-khatri-959248259/" target="_blank" aria-label="LinkedIn">🔗</a>
+                    <a href="https://www.linkedin.com/in/sushan-khatri-959248259/" target="_blank"
+                        aria-label="LinkedIn">🔗</a>
                     <a href="https://github.com/KhatriSuson" target="_blank" aria-label="GitHub">🐙</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Theme Toggle
-        const toggleTheme = document.querySelector('.theme-toggle');
-        toggleTheme.addEventListener('click', () => {
-            document.body.dataset.theme = document.body.dataset.theme === 'dark' ? '' : 'dark';
-        });
-
-        // Mobile Menu Toggle
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('nav ul');
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    </script>
 </body>
 
 </html>

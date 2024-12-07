@@ -6,6 +6,8 @@
     <title>About Me | Full Stack Developer</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Custom CSS */
         body {
@@ -87,7 +89,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="#about">About Me</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -125,58 +127,94 @@
         </div>
     </section>
 
-    <section id="services" class="bg-light py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">My Services</h2>
-            <p class="mb-5">Offering professional services in the following areas:</p>
-            
-            <div class="row">
-                <!-- Service 1: Full Stack Web Development -->
-                <div class="col-md-3 mb-4">
-                    <div class="service-card p-4 shadow-sm rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="Full Stack Web Development">
-                        <img src="images/web-development-icon.png" alt="Web Development" class="service-icon mb-3">
-                        <h4>Full Stack Web Development</h4>
-                        <p>
-                            Crafting robust web applications using modern technologies such as Django, React, and Node.js.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Service 2: Cloud Solutions with AWS -->
-                <div class="col-md-3 mb-4">
-                    <div class="service-card p-4 shadow-sm rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="Cloud Solutions with AWS">
-                        <img src="images/aws-icon.png" alt="AWS Cloud Solutions" class="service-icon mb-3">
-                        <h4>Cloud Solutions with AWS</h4>
-                        <p>
-                            Scalable and secure cloud architectures with AWS for high availability and fault tolerance.
-                        </p>
-                    </div>
-                </div>
-                
-                <!-- Service 3: AI/ML Development -->
-                <div class="col-md-3 mb-4">
-                    <div class="service-card p-4 shadow-sm rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="AI/ML Development">
-                        <img src="images/ai-ml-icon.png" alt="AI/ML Development" class="service-icon mb-3">
-                        <h4>AI/ML Development</h4>
-                        <p>
-                            Building intelligent systems using machine learning models and AI algorithms.
-                        </p>
-                    </div>
-                </div>
-    
-                <!-- Service 4: UI/UX Design -->
-                <div class="col-md-3 mb-4">
-                    <div class="service-card p-4 shadow-sm rounded" data-bs-toggle="tooltip" data-bs-placement="top" title="UI/UX Design">
-                        <img src="images/ui-ux-icon.png" alt="UI/UX Design" class="service-icon mb-3">
-                        <h4>UI/UX Design</h4>
-                        <p>
-                            Creating user-friendly interfaces and seamless user experiences for all digital platforms.
-                        </p>
-                    </div>
-                </div>
+
+    <div class="container" id="services">
+        <h2 style="color: #007bff;"><b>What I Offer (Service)</b></h2>
+        <div class="services-list">
+            <div class="service-item">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Full Stack Web Development</h3>
+                <p>I build dynamic, scalable, and responsive web applications using modern technologies like Django, React, and Node.js.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Infrastructure Solutions (AWS)</h3>
+                <p>Providing robust cloud solutions with AWS, including deployment, monitoring, and scaling of your web applications.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-robot"></i>
+                <h3>Machine Learning Model Development</h3>
+                <p>Creating custom machine learning models tailored to solve real-world problems and improve data-driven decision making.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-brain"></i>
+                <h3>Artificial Intelligence Solutions</h3>
+                <p>Implementing AI-powered systems for automation, optimization, and data analysis to drive efficiency and innovation.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-cogs"></i>
+                <h3>Custom Software Development</h3>
+                <p>Delivering bespoke software solutions to meet your unique business needs and optimize workflows.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Web Application Design</h3>
+                <p>Designing responsive, mobile-first web applications that ensure a seamless experience across all devices.</p>
             </div>
         </div>
-    </section>
+    </div>
+     <!-- services css -->
+    <style>
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .container h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        .service-item {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-item i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #007bff;
+        }
+
+        .service-item h3 {
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+        }
+
+        .service-item p {
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
     
     <!-- Custom CSS -->
     <style>
