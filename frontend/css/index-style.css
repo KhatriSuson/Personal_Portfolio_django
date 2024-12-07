@@ -68,52 +68,52 @@ nav ul li a {
     color: white;
     font-size: 18px;
 }
-@media (max-width: 768px) {
-    header {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 10px 15px;
-    }
+    @media (max-width: 768px) {
+        header {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px 15px;
+        }
 
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: linear-gradient(90deg, #6a11cb, #2575fc);
-        position: fixed;
-        top: 60px;
-        right: 0;
-        width: 100%;
-        height: calc(100vh - 60px);
+        nav ul {
+            display: none;
+            flex-direction: column;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            position: fixed;
+            top: 60px;
+            right: 0;
+            width: 100%;
+            height: calc(100vh - 60px);
+            text-align: center;
+        }
+
+        nav ul.open {
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 15px 0;
+        }
+
+    /* Hero Section */
+    .hero {
+        background-color: #34495e;
+        color: white;
         text-align: center;
+        padding: 100px 0;
     }
 
-    nav ul.open {
-        display: flex;
+    .hero h1 {
+        font-size: 3rem;
     }
 
-    nav ul li {
-        margin: 15px 0;
+    .hero p {
+        font-size: 1.5rem;
     }
 
-/* Hero Section */
-.hero {
-    background-color: #34495e;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.hero h1 {
-    font-size: 3rem;
-}
-
-.hero p {
-    font-size: 1.5rem;
-}
-
-.hero .cta-button {
-    margin-top: 20px;
-}
+    .hero .cta-button {
+        margin-top: 20px;
+    }
 
 /* About Me Section */
 .about {
