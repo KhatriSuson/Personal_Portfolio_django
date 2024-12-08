@@ -69,6 +69,29 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // portfolio js
+document.addEventListener('DOMContentLoaded', () => {
+    // Select all animated icons
+    const icons = document.querySelectorAll('.cloud-icon, .web-icon, .ai-icon, .code-icon');
+
+    // Function to set random initial positions and animation durations
+    const randomizeIcons = () => {
+        icons.forEach(icon => {
+            const randomX = Math.random() * 100; // Random horizontal position (0-100% viewport width)
+            const randomY = Math.random() * 100; // Random vertical position (0-100% viewport height)
+            const randomDuration = Math.random() * 15 + 15; // Random animation duration (15-30s)
+
+            icon.style.left = `${randomX}vw`;
+            icon.style.top = `${randomY}vh`;
+            icon.style.animationDuration = `${randomDuration}s`;
+        });
+    };
+
+    // Apply randomization on load
+    randomizeIcons();
+
+    // Re-randomize every 30 seconds to simulate dynamic repositioning
+    setInterval(randomizeIcons, 30000);
+});
 
 
 
