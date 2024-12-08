@@ -21,26 +21,33 @@
     <!-- Header -->
     <header>
         <div class="nav-container">
+            <!-- Logo Section -->
             <div class="logo">
                 <a href="#home">Sushan Khatri</a>
             </div>
-            <button class="theme-toggle">
-                🌗
+
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" aria-label="Toggle Theme">
+                <i class="theme-icon">☀️</i>
             </button>
+
+            <!-- Navigation Links -->
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#resume">Resume</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+            <!-- Hamburger Menu -->
             <div class="hamburger" aria-label="Toggle navigation">☰</div>
         </div>
     </header>
+
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -65,24 +72,36 @@
         </div>
         <div id="background-animation"></div>
     </section>
-    
+
 
 
 
     <section id="about" class="about">
-
+        <div class="animated-background"></div>
         <div class="container">
             <h2>About Me</h2>
             <div class="profile">
-                <img src="./assets/img/profile-photo.png" alt="Your Name">
+                <!-- Profile Image -->
+                <img src="./assets/img/profile-photo.png" alt="Sushan Khatri" class="profile-photo">
+
+                <!-- Bio Section -->
                 <div class="bio">
-                    <p>Hello! I'm a Full Stack Developer, Certified Cloud Practitioner, and AI/ML Engineer with
-                        experience in developing dynamic web applications, cloud-based solutions, and AI-powered models.
-                        I enjoy learning new technologies and creating efficient solutions.</p>
+                    <p>
+                        Hello! I'm a <strong>Full Stack Developer</strong>, <strong>Certified Cloud
+                            Practitioner</strong>, and
+                        <strong>AI/ML Engineer</strong> with experience in developing dynamic web applications,
+                        cloud-based solutions,
+                        and AI-powered models. I enjoy learning new technologies and creating efficient solutions that
+                        make an impact.
+                    </p>
                 </div>
             </div>
+
+            <!-- Social Links -->
             <div class="social-links">
-                <a href="#">LinkedIn</a> | <a href="https://github.com/KhatriSuson">GitHub</a> | <a href="#">Twitter</a>
+                <a href="#" target="_blank" class="social-link linkedin">LinkedIn</a>
+                <a href="https://github.com/KhatriSuson" target="_blank" class="social-link github">GitHub</a>
+                <a href="#" target="_blank" class="social-link twitter">Twitter</a>
             </div>
         </div>
     </section>
@@ -90,6 +109,7 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
+        <div class="animated-background"></div>
         <div class="container">
             <h2>Portfolio</h2>
             <div class="projects">
@@ -111,6 +131,7 @@
             </div>
         </div>
     </section>
+
 
 
     <!-- Certifications Section -->
