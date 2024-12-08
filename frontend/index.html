@@ -37,6 +37,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#certifications">Certificates</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -165,43 +166,59 @@
 
 
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certifications</h2>
-            <ul class="certifications-list">
-                <li class="certification-item">
-                    <div class="certification-card">
-                        <span class="certification-icon">☁️</span>
-                        <h3>AWS Certified Cloud Practitioner</h3>
-                    </div>
-                </li>
-                <li class="certification-item">
-                    <div class="certification-card">
-                        <span class="certification-icon">🌐</span>
-                        <h3>Google Cloud Certified - Associate Cloud Engineer</h3>
-                    </div>
-                </li>
-                <li class="certification-item">
-                    <div class="certification-card">
-                        <span class="certification-icon">🤖</span>
-                        <h3>TensorFlow Developer Certificate</h3>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+ <!-- Certifications Section -->
+<section id="certifications" class="certifications">
+    <!-- Animated Background with Icons -->
+    <div class="animated-background">
+        <div class="cloud-icon"></div>
+        <div class="web-icon"></div>
+        <div class="ai-icon"></div>
+        <div class="code-icon"></div>
+    </div>
+
+    <!-- Certifications Content -->
+    <div class="container">
+        <h2 class="section-title">Certifications</h2>
+        <ul class="certifications-list">
+            <li class="certification-item">
+                <div class="certification-card">
+                    <img src="./assets/icons/aws-svgrepo-com.svg" alt="AWS Certified Cloud Practitioner Icon" class="certification-icon">
+                    <h3>AWS Certified Cloud Practitioner</h3>
+                </div>
+            </li>
+            <li class="certification-item">
+                <div class="certification-card">
+                    <img src="./assets/icons/google-cloud-svgrepo-com.svg" alt="Google Cloud Certified Icon" class="certification-icon">
+                    <h3>Google Cloud Certified - Associate Cloud Engineer</h3>
+                </div>
+            </li>
+            <li class="certification-item">
+                <div class="certification-card">
+                    <img src="./assets/icons/tensorflow-svgrepo-com.svg" alt="TensorFlow Developer Certificate Icon" class="certification-icon">
+                    <h3>TensorFlow Developer Certificate</h3>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
 
 
 
     <!-- Resume Section -->
     <section id="resume" class="resume">
+        <!-- Animated Background -->
+        <div class="animated-background">
+            <div class="cloud-icon"><img src="assets/icons/aws-svgrepo-com.svg" alt="aws"></div>
+            <div class="ai-icon"><img src="assets/icons/google-cloud-svgrepo-com.svg" alt=""></div>
+            <div class="web-icon"><img src="assets/icons/tensorflow-svgrepo-com.svg" alt=""></div>
+        </div>
+    
+        <!-- Resume Content -->
         <div class="container">
             <h2 class="section-title">Resume</h2>
             <div class="resume-content">
                 <p class="resume-description">
-                    Explore my professional journey, skills, and experiences. Click below to download a copy of my
-                    resume.
+                    Explore my professional journey, skills, and experiences. Click below to download a copy of my resume.
                 </p>
                 <a href="resume.pdf" class="cta-button" download>
                     <span class="button-icon">📄</span> Download Resume
@@ -209,51 +226,62 @@
             </div>
         </div>
     </section>
-
+    
+<!-- services serction  -->
+ <section>
     <div class="services" id="services">
-        <div class="container">
-            <h2>What I Offer</h2>
-            <div class="services-list">
-                <div class="service-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I build dynamic, scalable, and responsive web applications using modern technologies like Django,
-                        React, and Node.js.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Cloud Infrastructure Solutions (AWS)</h3>
-                    <p>Providing robust cloud solutions with AWS, including deployment, monitoring, and scaling of your
-                        web applications.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-robot"></i>
-                    <h3>Machine Learning Model Development</h3>
-                    <p>Creating custom machine learning models tailored to solve real-world problems and improve
-                        data-driven decision making.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-brain"></i>
-                    <h3>Artificial Intelligence Solutions</h3>
-                    <p>Implementing AI-powered systems for automation, optimization, and data analysis to drive
-                        efficiency and innovation.</p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Custom Software Development</h3>
-                    <p>Delivering bespoke software solutions to meet your unique business needs and optimize workflows.
-                    </p>
-                </div>
-                <div class="service-item">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Responsive Web Application Design</h3>
-                    <p>Designing responsive, mobile-first web applications that ensure a seamless experience across all
-                        devices.</p>
-                </div>
-            </div>
-        </div>
+        <!-- Animated Background -->
+        <div class="animated-background">
+           <div class="cloud-icon"><img src="assets/icons/aws-svgrepo-com.svg" alt="aws"></div>
+           <div class="ai-icon"><img src="assets/icons/google-cloud-svgrepo-com.svg" alt=""></div>
+           <div class="web-icon"><img src="assets/icons/tensorflow-svgrepo-com.svg" alt=""></div>
+       </div>
+       <div class="container">
+           <h2>What I Offer</h2>
+           <div class="services-list">
+               <div class="service-item">
+                   <i class="fas fa-laptop-code"></i>
+                   <h3>Full Stack Web Development</h3>
+                   <p>I build dynamic, scalable, and responsive web applications using modern technologies like Django,
+                       React, and Node.js.</p>
+               </div>
+               <div class="service-item">
+                   <i class="fas fa-cloud"></i>
+                   <h3>Cloud Infrastructure Solutions (AWS)</h3>
+                   <p>Providing robust cloud solutions with AWS, including deployment, monitoring, and scaling of your
+                       web applications.</p>
+               </div>
+               <div class="service-item">
+                   <i class="fas fa-robot"></i>
+                   <h3>Machine Learning Model Development</h3>
+                   <p>Creating custom machine learning models tailored to solve real-world problems and improve
+                       data-driven decision making.</p>
+               </div>
+               <div class="service-item">
+                   <i class="fas fa-brain"></i>
+                   <h3>Artificial Intelligence Solutions</h3>
+                   <p>Implementing AI-powered systems for automation, optimization, and data analysis to drive
+                       efficiency and innovation.</p>
+               </div>
+               <div class="service-item">
+                   <i class="fas fa-cogs"></i>
+                   <h3>Custom Software Development</h3>
+                   <p>Delivering bespoke software solutions to meet your unique business needs and optimize workflows.
+                   </p>
+               </div>
+               <div class="service-item">
+                   <i class="fas fa-mobile-alt"></i>
+                   <h3>Responsive Web Application Design</h3>
+                   <p>Designing responsive, mobile-first web applications that ensure a seamless experience across all
+                       devices.</p>
+               </div>
+           </div>
+       </div>
 
-    </div>
+   </div>
+
+ </section>
+   
 
 
 

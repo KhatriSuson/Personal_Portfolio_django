@@ -538,3 +538,400 @@ body.dark-mode .project-card:hover {
         align-items: center;
     }
 }
+
+/* Certifications Section Styling */
+.certifications {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.certifications .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: inherit;
+}
+
+.certifications-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.certification-item {
+    width: 300px;
+}
+
+.certification-card {
+    background-color: var(--card-bg-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-light);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .certification-card {
+    background-color: var(--card-bg-dark);
+    box-shadow: 0 4px 10px var(--shadow-dark);
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px var(--shadow-light);
+}
+
+body.dark-mode .certification-card:hover {
+    box-shadow: 0 8px 20px var(--shadow-dark);
+}
+
+.certification-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.certification-card h3 {
+    font-size: 1.5rem;
+    color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .certifications-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Animated Background */
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.cloud-icon, .web-icon, .ai-icon, .code-icon {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: var(--icon-opacity);
+    animation: float 15s infinite ease-in-out, move 30s infinite linear;
+}
+
+/* Background Icons */
+.cloud-icon {
+    background-image: url('./assets/icons/cloud-icon.svg');
+    width: 120px;
+    height: 120px;
+    top: 10%;
+    left: 10%;
+}
+
+.web-icon {
+    background-image: url('./assets/icons/web-icon.svg');
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 70%;
+}
+
+.ai-icon {
+    background-image: url('./assets/icons/ai-icon.svg');
+    width: 120px;
+    height: 120px;
+    top: 30%;
+    left: 30%;
+}
+
+.code-icon {
+    background-image: url('./assets/icons/code-icon.svg');
+    width: 80px;
+    height: 80px;
+    top: 70%;
+    left: 20%;
+}
+
+/* Resume Section Styling */
+.resume {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.resume .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: inherit;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.resume-description {
+    font-size: 1.2rem;
+    color: inherit;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-bg-light);
+    color: var(--text-light);
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 10px var(--shadow-light);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+body.dark-mode .cta-button {
+    background-color: var(--card-bg-dark);
+    color: var(--text-dark);
+    box-shadow: 0 4px 10px var(--shadow-dark);
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+    background-color: #007bff; /* Accent color for hover */
+    color: #fff;
+    box-shadow: 0 8px 20px var(--shadow-light);
+}
+
+body.dark-mode .cta-button:hover {
+    box-shadow: 0 8px 20px var(--shadow-dark);
+}
+
+.button-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Animated Background */
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.cloud-icon, .ai-icon, .web-icon {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: var(--icon-opacity);
+    animation: float 10s infinite ease-in-out, move 25s infinite linear;
+}
+
+/* Background Icons */
+.cloud-icon {
+    background-image: url('./assets/icons/cloud-icon.svg');
+    width: 100px;
+    height: 100px;
+    top: 20%;
+    left: 10%;
+}
+
+.ai-icon {
+    background-image: url('./assets/icons/ai-icon.svg');
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 80%;
+}
+
+.web-icon {
+    background-image: url('./assets/icons/web-icon.svg');
+    width: 90px;
+    height: 90px;
+    top: 70%;
+    left: 30%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50vw, 50vh);
+    }
+}
+
+/* Services Section Styling */
+.services {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: inherit;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-item {
+    background-color: var(--card-bg-light);
+    color: var(--text-light);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 2s ease-in-out;
+}
+
+body.dark-mode .service-item {
+    background-color: var(--card-bg-dark);
+    color: var(--text-dark);
+    box-shadow: 0 5px 15px var(--shadow-dark);
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px var(--shadow-light);
+}
+
+body.dark-mode .service-item:hover {
+    box-shadow: 0 10px 25px var(--shadow-dark);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    animation: pulse 1.5s infinite;
+}
+
+.service-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: inherit;
+}
+
+/* Background Icons */
+.animated-background .cloud-icon,
+.animated-background .code-icon,
+.animated-background .ai-icon,
+.animated-background .gear-icon {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: var(--icon-opacity);
+    animation: float 10s infinite ease-in-out, move 25s infinite linear;
+}
+
+.cloud-icon {
+    background-image: url('./assets/icons/cloud-icon.svg');
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 15%;
+}
+
+.code-icon {
+    background-image: url('./assets/icons/code-icon.svg');
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    left: 70%;
+}
+
+.ai-icon {
+    background-image: url('./assets/icons/ai-icon.svg');
+    width: 120px;
+    height: 120px;
+    top: 60%;
+    left: 10%;
+}
+
+.gear-icon {
+    background-image: url('./assets/icons/gear-icon.svg');
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 80%;
+}
+
+/* Animations */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
