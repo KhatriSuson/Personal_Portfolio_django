@@ -93,6 +93,25 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(randomizeIcons, 30000);
 });
 
+// contact js
+document.addEventListener('DOMContentLoaded', () => {
+    const icons = document.querySelectorAll('.mail-icon, .chat-icon, .phone-icon');
+
+    const randomizeIcons = () => {
+        icons.forEach(icon => {
+            const randomX = Math.random() * 100; // Random horizontal position
+            const randomY = Math.random() * 100; // Random vertical position
+            const randomDuration = Math.random() * 20 + 10; // Random animation duration (10-30s)
+
+            icon.style.left = `${randomX}vw`;
+            icon.style.top = `${randomY}vh`;
+            icon.style.animationDuration = `${randomDuration}s`;
+        });
+    };
+
+    randomizeIcons();
+    setInterval(randomizeIcons, 25000); // Re-randomize every 25 seconds
+});
 
 
 document.addEventListener("DOMContentLoaded", () => {

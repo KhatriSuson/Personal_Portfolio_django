@@ -935,3 +935,189 @@ body.dark-mode .service-item:hover {
         transform: scale(1.1);
     }
 }
+
+
+/* Contact Section */
+.contact {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--card-bg-light);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px var(--shadow-light);
+}
+
+body.dark-mode .contact .container {
+    background: var(--card-bg-dark);
+    box-shadow: 0 5px 15px var(--shadow-dark);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--text-light);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.form-group {
+    text-align: left;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+label {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 1px solid var(--input-border-light);
+    border-radius: 8px;
+    background-color: var(--input-bg-light);
+    color: var(--text-light);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+    border-color: var(--input-border-dark);
+    background-color: var(--input-bg-dark);
+    color: var(--text-dark);
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 8px var(--primary-color);
+    outline: none;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-hover-color);
+    transform: translateY(-2px);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+/* Social Media Links */
+.social-media-links {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: var(--text-light);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
+    transform: translateY(-5px);
+}
+
+body.dark-mode .social-icon {
+    color: var(--text-dark);
+}
+
+body.dark-mode .social-icon:hover {
+    color: var(--primary-hover-color);
+}
+
+/* Background Icons */
+.animated-background .mail-icon,
+.animated-background .chat-icon,
+.animated-background .phone-icon {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: var(--icon-opacity);
+    animation: float 10s infinite ease-in-out, move 25s infinite linear;
+}
+
+.mail-icon {
+    background-image: url('./assets/icons/mail-icon.svg');
+    width: 80px;
+    height: 80px;
+    top: 15%;
+    left: 10%;
+}
+
+.chat-icon {
+    background-image: url('./assets/icons/chat-icon.svg');
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 80%;
+}
+
+.phone-icon {
+    background-image: url('./assets/icons/phone-icon.svg');
+    width: 90px;
+    height: 90px;
+    top: 70%;
+    left: 20%;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
