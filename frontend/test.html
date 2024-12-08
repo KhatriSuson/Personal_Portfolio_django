@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark and Light Mode</title>
     <style>
         /* Base styles (applies to both themes) */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
 
-/* Light mode styles */
-[data-theme="light"] {
-    --bg-color: #ffffff;
-    --text-color: #000000;
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-}
+        /* Light mode styles */
+        [data-theme="light"] {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+        }
 
-[data-theme="light"] {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
+        [data-theme="light"] {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
 
-/* Dark mode styles */
-[data-theme="dark"] {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --primary-color: #bb86fc;
-    --secondary-color: #03dac6;
-}
+        /* Dark mode styles */
+        [data-theme="dark"] {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --primary-color: #bb86fc;
+            --secondary-color: #03dac6;
+        }
 
-[data-theme="dark"] {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
+        [data-theme="dark"] {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
 
-/* Links and buttons */
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
+        /* Links and buttons */
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
 
-a:hover {
-    text-decoration: underline;
-}
+        a:hover {
+            text-decoration: underline;
+        }
 
-button {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+        button {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-button:hover {
-    background-color: var(--secondary-color);
-}
+        button:hover {
+            background-color: var(--secondary-color);
+        }
 
-/* Additional styles for cards, headers, etc. */
-.card {
-    background-color: var(--bg-color);
-    border: 1px solid var(--secondary-color);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
+        /* Additional styles for cards, headers, etc. */
+        .card {
+            background-color: var(--bg-color);
+            border: 1px solid var(--secondary-color);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
+
 <body>
     <header>
         <button id="theme-toggle">🌗</button>
@@ -98,13 +99,14 @@ button:hover {
 </body>
 <script>
     const themeToggle = document.getElementById('theme-toggle');
-const rootElement = document.documentElement;
+    const rootElement = document.documentElement;
 
-themeToggle.addEventListener('click', () => {
-    const currentTheme = rootElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-    rootElement.setAttribute('data-theme', newTheme);
-});
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = rootElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        rootElement.setAttribute('data-theme', newTheme);
+    });
 
 </script>
+
 </html>
