@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushan Khatri - Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/portfolio-style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="#home">Sushan Khatri</a>
+            </div>
+
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" aria-label="Toggle Theme">
+                <i class="theme-icon">☀️</i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="index.html">Certificates</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger" aria-label="Toggle navigation">☰</div>
+        </div>
+    </header>
+    <body>
+        
+        <section class="feedback-section text-center py-5" style="background: linear-gradient(to right, #f9f9f9, #ffffff);">
+            <div class="container">
+                <h2 class="mb-5" style="font-family: 'Roboto', sans-serif; font-weight: bold; color: #333;">What Our Clients Say</h2>
+                <div id="feedbackCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        {% for feedback in feedbacks %}
+                        <div class="carousel-item {% if forloop.first %}active{% endif %}" style="transition: transform 0.6s ease-in-out;">
+                            <div class="feedback-card mx-auto p-4 shadow" style="max-width: 600px; background: #ffffff; border-radius: 10px; border: 1px solid #e0e0e0;">
+                                <img src="{{ feedback.image.url }}" alt="Client {{ feedback.name }}" 
+                                     class="client-img mx-auto d-block rounded-circle shadow-lg" 
+                                     style="width: 100px; height: 100px; object-fit: cover; border: 3px solid #ffd700;">
+                                <p class="client-name mt-4" style="font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 18px; color: #222;">{{ feedback.name }}</p>
+                                <p class="testimonial-text text-muted" style="font-style: italic; font-size: 16px;">"{{ feedback.message }}"</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="prev" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 50%; width: 40px; height: 40px; border: none;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#feedbackCarousel" data-bs-slide="next" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 50%; width: 40px; height: 40px; border: none;">
+                        <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        
+        <style>
+        .feedback-section {
+            padding: 60px 0;
+            background: linear-gradient(to bottom, #f7f9fc, #ffffff);
+        }
+        .feedback-card {
+            animation: fadeInUp 1s ease-in-out;
+        }
+        .client-img {
+            transition: transform 0.4s ease-in-out;
+        }
+        .client-img:hover {
+            transform: scale(1.1);
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .carousel-control-prev-icon:hover, .carousel-control-next-icon:hover {
+            background-color: #ffd700;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        </style>
+        
+    </body>
+
+
+ <!-- Footer Section -->
+ <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <a href="#home"><h2>KhatriSuson</h2></a>
+                
+            </div>
+
+            <!-- Footer Navigation Links -->
+            <nav class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 KhatriSuson. All Rights Reserved.</p>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://x.com/SushanKhatri4" target="_blank" aria-label="Twitter" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sushan-khatri-959248259/" target="_blank" aria-label="LinkedIn"
+                    class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/KhatriSuson" target="_blank" aria-label="GitHub" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/portfolio-script.js"></script>
+</body>
+
+</html>
