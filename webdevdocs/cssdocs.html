@@ -169,7 +169,9 @@
     <section id="intro" class="doc" data-keywords="introduction overview purpose what is css why css">
       <h2>1. Introduction</h2>
       <p><span class="tag">Overview</span> <span class="tag">Purpose</span></p>
-      <div class="callout muted">[Add a brief overview of CSS, what it does, how it works with HTML, and typical use cases.]</div>
+      <div class="callout muted">CSS, which stands for Cascading Style Sheets, is a styling language used to design and enhance the appearance of web pages. While HTML provides the structure and content of a page—such as headings, paragraphs, images, and links—CSS is responsible for controlling how those elements look, including their colors, fonts, spacing, and layouts. In other words, HTML builds the skeleton of a website, and CSS adds the design layer that makes it visually appealing and user-friendly.
+
+CSS works hand in hand with HTML and can be applied in three main ways. The first is Inline CSS, where styles are applied directly to individual elements using the style attribute inside an HTML tag. This approach is useful for quick, one-off styling but not recommended for large projects since it becomes difficult to maintain.</div>
       <details class="block">
         <summary>Example: Attach CSS to HTML</summary>
         <pre><button class="copy-btn" data-copy>Copy</button><code>&lt;!-- External stylesheet --&gt;
@@ -190,7 +192,7 @@
       <h2>2. Types of CSS</h2>
 
       <h3 id="inline-css">2.1 Inline CSS</h3>
-      <p class="muted">[Explain when to use inline CSS, pros/cons, specificity impact.]</p>
+      <p class="muted">The main advantage of inline CSS is its simplicity—changes apply instantly to the element without needing extra files. However, the downsides are significant: it mixes content with design (making code harder to maintain), bloats HTML, and makes it difficult to keep styles consistent across a site. If you want to update the look of multiple elements, you would need to edit each inline style one by one, which is inefficient.</p>
       <pre><button class="copy-btn" data-copy>Copy</button><code>&lt;p style="color: red; font-weight: 700;"&gt;Inline CSS example&lt;/p&gt;</code></pre>
 
       <h3 id="internal-css">2.2 Internal CSS</h3>
