@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushan Khatri - Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/portfolio-style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+        header .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .navbar a {
+            color: #fff;
+            margin: 0 1rem;
+        }
+
+        /* Blog Post Section */
+        .blog-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .blog-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        .blog-meta {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        .blog-content {
+            line-height: 1.8;
+            color: #444;
+        }
+        .blog-content img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.5rem 1rem;
+            background-color: #007BFF;
+            color: #fff;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="#home">Sushan Khatri</a>
+            </div>
+
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" aria-label="Toggle Theme">
+                <i class="theme-icon">☀️</i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="index.html">Certificates</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger" aria-label="Toggle navigation">☰</div>
+        </div>
+    </header>
+    <body>
+        
+       
+    <!-- Blog Post Content -->
+    <section class="blog-container">
+        <h1 class="blog-title">Python Programming</h1>
+        <p class="blog-meta">Posted on <strong>Dec 20, 2024</strong> by <strong>Sushan Khatri</strong></p>
+        <div class="blog-content">
+            <h3>Mastering Python: Tips and Tricks for Beginners</h3>
+            <p>Python is one of the easiest programming languages to learn, making it perfect for beginners. In this post, you’ll discover tips to boost your learning, such as writing clean, readable code, practicing regularly, and exploring Python’s extensive libraries. We’ll also walk you through building a simple project to put your skills into action.</p>
+            <img src="assets/img/python.jpeg" alt="Blog Post Image">
+            <h3>10 Must-Know Python Libraries for Developers</h3>
+            <p>Python’s versatility lies in its libraries. Whether you're developing web applications, analyzing data, or working with AI, libraries like NumPy, Pandas, and Flask are invaluable. This article dives deep into 10 libraries you must explore to maximize your efficiency and productivity as a Python developer.</p>
+        </div>
+        <div class="back-button" onclick="goBack()">Back to Blog</div>
+    </section>
+
+    <script>
+        // JavaScript for Back Button
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+  
+
+ <!-- Footer Section -->
+ <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Footer Logo -->
+            <div class="footer-logo">
+                <a href="#home"><h2>KhatriSuson</h2></a>
+                
+            </div>
+
+            <!-- Footer Navigation Links -->
+            <nav class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 KhatriSuson. All Rights Reserved.</p>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://x.com/SushanKhatri4" target="_blank" aria-label="Twitter" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sushan-khatri-959248259/" target="_blank" aria-label="LinkedIn"
+                    class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/KhatriSuson" target="_blank" aria-label="GitHub" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/portfolio-script.js"></script>
+</body>
+
+</html>

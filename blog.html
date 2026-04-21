@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushan Khatri - Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/portfolio-style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <!-- Logo Section -->
+            <div class="logo">
+                <a href="index.html">Sushan Khatri</a>
+            </div>
+
+            <!-- Theme Toggle Button -->
+            <button class="theme-toggle" aria-label="Toggle Theme">
+                <i class="theme-icon">☀️</i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Portfolio</a></li>
+                    <li><a href="index.html">Certificates</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger" aria-label="Toggle navigation">☰</div>
+        </div>
+    </header>
+
+
+    <section class="featured-post">
+        <img src="featured-post-image.jpg" alt="Featured Post" class="featured-image">
+        <h2 class="featured-title">Welcome to My Blog!</h2>
+        <p class="featured-excerpt">Welcome to my blog! <br>Here, I share tips, tutorials, and stories about the things <br>I’m passionate about, like technology, coding, personal<br> growth, and the latest industry trends. <br>Whether you're a developer, a tech lover, or just someone<br> curious to learn something new, you’ll find plenty of interesting content here.
+            <br><b>-"Explore the latest posts below, and let’s learn and grow together!"</b>
+        </p>
+        <a href="#" class="btn btn-primary">Read More</a>
+    </section>
+
+    <!-- Blog Grid Section -->
+    <section class="blog-grid">
+        <div class="blog-post">
+            <img src="assets/img/ai-ml.jpg" alt="Post 1" class="blog-thumbnail">
+            <h3 class="blog-title">Artificial Intelligence / Machine Learning (AI/ML)</h3>
+            <p class="blog-excerpt">Explore the basics of AI and machine learning in simple terms, and learn how they impact our daily lives.</p>
+            <a href="aws-readmore.html" class="btn btn-secondary">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="assets/img/python.jpeg" alt="Post 2" class="blog-thumbnail">
+            <h3 class="blog-title">Python Programming</h3>
+            <p class="blog-excerpt">Learn essential tips and techniques to get started with Python programming, from understanding syntax to building your first project.</p>
+            <a href="pyhton-readme.html" class="btn btn-secondary">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="assets/img/web-development.png" alt="Post 3" class="blog-thumbnail">
+            <h3 class="blog-title">Web Development</h3>
+            <p class="blog-excerpt">Stay ahead of the curve with the latest trends in web development, from frameworks to design principles.</p>
+            <a href="web-dev-readmore.html" class="btn btn-secondary">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <img src="assets/img/aws-servies.png" alt="Post 3" class="blog-thumbnail">
+            <h3 class="blog-title">AWS Services</h3>
+            <p class="blog-excerpt">Learn the basics of Amazon Web Services (AWS), its key offerings, and how it’s transforming cloud computing for businesses and developers.</p>
+            <a href="aws-readmore.html" class="btn btn-secondary">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="assets/img/ict.jpg" alt="Post 3" class="blog-thumbnail">
+            <h3 class="blog-title">BICT General Topics</h3>
+            <p class="blog-excerpt">Explore the diverse career opportunities available to BICT graduates, from networking and software development to IT consulting.</p>
+            <a href="#" class="btn btn-secondary">Read More</a>
+        </div>
+    </section>
+
+    <style>
+        /* Featured Post Styles */
+        .featured-post {
+            text-align: center;
+            background-color: #f0f8ff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+        .featured-image {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .featured-image:hover {
+            transform: scale(1.05);
+        }
+        .featured-title {
+            font-size: 2rem;
+            margin: 1rem 0;
+            color: #333;
+        }
+        .featured-excerpt {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .btn-primary {
+            background-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .btn-secondary {
+            background-color: #6c757d;
+        }
+        .btn-secondary:hover {
+            background-color: #495057;
+        }
+
+        /* Blog Grid Styles */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            background-color: #f9f9f9;
+        }
+        .blog-post {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .blog-post:hover {
+            transform: translateY(-10px);
+        }
+        .blog-thumbnail {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .blog-title {
+            margin: 0.5rem 0;
+            color: #333;
+            font-size: 1.25rem;
+        }
+        .blog-excerpt {
+            color: #555;
+            font-size: 0.9rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+
+    <script>
+        // Example JavaScript for dynamic hover effect (optional)
+        document.querySelectorAll('.blog-post').forEach(post => {
+            post.addEventListener('mouseover', () => {
+                post.style.boxShadow = '0 8px 20px rgba(0, 0, 0, 0.2)';
+            });
+            post.addEventListener('mouseout', () => {
+                post.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.1)';
+            });
+        });
+    </script>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Logo -->
+                <div class="footer-logo">
+                    <a href="#home"><h2>KhatriSuson</h2></a>
+                    
+                </div>
+
+                <!-- Footer Navigation Links -->
+                <nav class="footer-nav">
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 KhatriSuson. All Rights Reserved.</p>
+
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="https://x.com/SushanKhatri4" target="_blank" aria-label="Twitter" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sushan-khatri-959248259/" target="_blank" aria-label="LinkedIn"
+                        class="social-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/KhatriSuson" target="_blank" aria-label="GitHub" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/portfolio-script.js"></script>
+</body>
+
+</html>
